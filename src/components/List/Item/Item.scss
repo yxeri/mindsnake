@@ -1,0 +1,37 @@
+@import "../../../common";
+
+li {
+  display: flex;
+  border-top: $border;
+  border-left: $border;
+  border-right: $border;
+  padding: $padding;
+  align-items: center;
+
+  button {
+    margin-left: auto;
+
+    img {
+      max-height: 14px;
+    }
+  }
+
+  p {
+    margin: 0 $padding;
+  }
+}
+
+li:first-child {
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+
+li:last-child {
+  border-bottom: $border;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+.done {
+  text-decoration: line-through;
+}
